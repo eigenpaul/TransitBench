@@ -1,0 +1,95 @@
+{
+  "fetched_utc": "2026-10-26T03:29:01Z",
+  "tables": [
+    {
+      "file": "dr25_stellar.csv",
+      "kind": "tap",
+      "source": "select kepid,teff,logg,kepmag,radius,mass,dens,st_quarters,nkoi,ntce,nconfp,dataspan,dutycycle,timeoutsumry,mesthres01p5,mesthres02p0,mesthres02p5,mesthres03p0,mesthres03p5,mesthres04p5,mesthres05p0,mesthres06p0,mesthres07p5,mesthres09p0,mesthres10p5,mesthres12p0,mesthres12p5,mesthres15p0,rrmscdpp03p0,rrmscdpp06p0,limbdark_coeff1,limbdark_coeff2,limbdark_coeff3,limbdark_coeff4 from q1_q17_dr25_ks",
+      "bytes": 43801806,
+      "lines": 200039,
+      "sha256": "8453f651ba6433b2d7effdb781fd7006a2f7efa06b0cf7e8b4eaf35eb818b2ee"
+    },
+    {
+      "file": "cumulative_koi.csv",
+      "kind": "tap",
+      "source": "select kepid,kepoi_name,kepler_name,koi_disposition,koi_pdisposition,koi_fpflag_nt,koi_fpflag_ss,koi_fpflag_co,koi_fpflag_ec,koi_period+0 as period_d,koi_time0bk+0 as epoch_bkjd,koi_duration+0 as dur_hr,koi_depth+0 as depth_ppm,koi_max_mult_ev+0 as mes,koi_model_snr+0 as snr,koi_tce_plnt_num,koi_tce_delivname from cumulative",
+      "bytes": 1945808,
+      "lines": 9565,
+      "sha256": "b6eaca04d3a7e24ee1ea2c2e5a3b4f4d3e775bae7b7061a7fbd8fe6311d9ab7b"
+    },
+    {
+      "file": "dr25_obs_tce.csv",
+      "kind": "tap",
+      "source": "select kepid,tce_plnt_num,tce_rogue_flag,tce_period+0 as period_d,tce_time0bk+0 as epoch_bkjd,tce_duration+0 as dur_hr,tce_depth+0 as depth_ppm,tce_max_mult_ev+0 as mes from q1_q17_dr25_tce",
+      "bytes": 3988925,
+      "lines": 34033,
+      "sha256": "3b994a75cf1910ade7d3fe4525422dde8c9ad5b37880d4205fc5928445fb7dc3"
+    },
+    {
+      "file": "keplernames.csv",
+      "kind": "tap",
+      "source": "select kepid,pl_name,koi_name,kepler_name from keplernames",
+      "bytes": 148151,
+      "lines": 2819,
+      "sha256": "6c8378eaa2af29aa041464ab7fadf705f7ad0b9216b57fcd849b4c42b9a5586d"
+    },
+    {
+      "file": "pscomppars_kepler.csv",
+      "kind": "tap",
+      "source": "select p.pl_name,p.ttv_flag,p.pl_controv_flag from pscomppars p join keplernames k on p.pl_name=k.pl_name",
+      "bytes": 54339,
+      "lines": 2819,
+      "sha256": "a7027b38b9f391f9488057c75ce0c6db2ceacce07e74cdb4cf48689ccd4c7e4b"
+    },
+    {
+      "file": "kplr_dr25_inj1_plti.txt",
+      "kind": "url",
+      "source": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_plti.txt",
+      "bytes": 47257124,
+      "lines": 146367,
+      "sha256": "6b9f2d8b597902aa4037b4a05d4dfd255f281f8f25f6b970e5a88fc8f0652979"
+    },
+    {
+      "file": "kplr_dr25_inj1_tces.txt",
+      "kind": "url",
+      "source": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_tces.txt",
+      "bytes": 10077066,
+      "lines": 45452,
+      "sha256": "e0d6d05b36a4180c7bc1b69d6d1a1feab95b02f26ed66d6fe89b8aa631e63e3f"
+    },
+    {
+      "file": "kirk2016_eb.tsv",
+      "kind": "url",
+      "source": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/AJ/151/68/catalog&-out.max=unlimited&-out.all",
+      "bytes": 473016,
+      "lines": 2934,
+      "sha256": "ef01f04fcdc1e0284cd8d904f1e7409a674779fd4bfd0be30a43578a4569ef7e"
+    },
+    {
+      "file": "kplr_droplist_inv.txt",
+      "kind": "url",
+      "source": "https://raw.githubusercontent.com/stevepur/DR25-occurrence-public/d200f54b6f0df49e0dae530e69983cdce5397bfb/data/kplr_droplist_inv.txt",
+      "bytes": 59789,
+      "lines": 4591,
+      "sha256": "e9ba1d8b530fd7954793044d461792301cfed7eed4255a530495ba6c37abd500"
+    },
+    {
+      "file": "cumulative_koi_shape.csv",
+      "kind": "tap",
+      "source": "select kepid,kepoi_name,koi_ror+0 as ror,koi_impact+0 as impact from cumulative",
+      "bytes": 580645,
+      "lines": 9565,
+      "sha256": "b9ab2cdf1539b855cecd60ade85e4500c79c2d0e52c0b1b23bb8be042f2847b3",
+      "fetched_utc": "2026-10-26T21:21:32Z"
+    },
+    {
+      "file": "dr25_tce_shape.csv",
+      "kind": "tap",
+      "source": "select kepid,tce_plnt_num,tce_ror+0 as ror,tce_impact+0 as impact from q1_q17_dr25_tce",
+      "bytes": 1776800,
+      "lines": 34033,
+      "sha256": "f9c22af1b9b23ecb4a261e7320ec70905c9f4991163a1a98651cac4814ff86d9",
+      "fetched_utc": "2026-10-26T21:21:32Z"
+    }
+  ]
+}

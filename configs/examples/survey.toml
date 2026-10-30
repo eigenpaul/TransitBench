@@ -1,0 +1,33 @@
+# One survey-r1 submission through prime-rl's eval and its env servers. Install this package into a prime-rl checkout
+# (prime-rl eca75ea is the commit these settings ran on), with TB the absolute path of this repository:
+#   git clone https://github.com/PrimeIntellect-ai/prime-rl && cd prime-rl
+#   git checkout eca75ea && git submodule update --init --recursive && uv sync
+#   uv pip install --python .venv/bin/python --no-deps -e $TB
+# Then, from the prime-rl checkout, with DATA the evaluator's data directory:
+#   TRANSITBENCH_DATA=$DATA uv run --no-sync eval @ $TB/configs/examples/survey.toml -m <model> --no-monitors.prime
+# survey-r1 is graded on samples A, B and dev in one pass; A and B are private and only the evaluator's data directory
+# holds them. survey-dev is the same task graded on the 196 dev stars only, which ship in the survey image. Without A
+# and B (anyone but the evaluator), select survey-dev instead:
+#   include = { ids = ["survey-dev"] }
+# and point TRANSITBENCH_DATA at any writable directory: survey-dev reads nothing from it and writes each run's
+# archive and grade, and any error log, under its private/.
+# The package sets the harness, image, box shape, timeouts, network and isolated scoring (TaskData).
+group_size = 1
+
+[select]
+include = { ids = ["survey-r1"] }
+
+[concurrency]
+min_inflight = 1
+max_inflight = 1
+
+[sampling]
+max_completion_tokens = 32768                  # the per-response cap of the benchmark's runs
+
+[[source]]
+name = "transitbench-survey"
+env.taskset.id = "transitbench-survey"
+env.agent.max_turns = 60
+env.agent.max_total_tokens = 200000
+env.agent.runtime.idle_timeout = 14400        # default 3600; the verifier inherits it
+env.agent.runtime.labels = ["transitbench", "survey"]

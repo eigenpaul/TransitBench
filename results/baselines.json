@@ -1,0 +1,4126 @@
+{
+  "release": "r1",
+  "sets": {
+    "A": {
+      "stars": 1000,
+      "star_files_sha256": "7ec1464b021c4431df44f7b2e00a066ecac418395cf9afac077944c984fde269",
+      "truth_sha256": "605de2b8dbf76494b30e30748a73d026e796de2497353f566ebd81b93ea2c2a2"
+    },
+    "B": {
+      "stars": 1000,
+      "star_files_sha256": "a6561c415cb28ee108a2b4ce762f2d02b4243c2469d6364c057b31bf72698416",
+      "truth_sha256": "abf96b05d2de84e6169d41b13535dcbd4509a772ff162b442dd2024b0337c944"
+    },
+    "dev": {
+      "stars": 196,
+      "star_files_sha256": "a6070450a9c0dc780e74985fa7aa217d59e13a0385f10dc7ae2d975f9a69d32c",
+      "truth_sha256": "20f04521cd2c7e65cf881b9ad8053936a7e108d01e7a0f8bd5578a50619fec48"
+    }
+  },
+  "scorer": "transitbench.score.report; point estimates, intervals are a separate step",
+  "table": {
+    "A": {
+      "empty": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "reference_detector": {
+        "S": 0.805,
+        "C": 0.805,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "learned_vetter": {
+        "S": 0.69625,
+        "C": 0.72625,
+        "F_per_100": 1.3888888888888888,
+        "eb_as_planet": 0.05263157894736842
+      },
+      "naive_v0": {
+        "S": -0.15875,
+        "C": 0.72875,
+        "F_per_100": 41.08796296296296,
+        "eb_as_planet": 1.0
+      },
+      "starter": {
+        "S": 0.04625,
+        "C": 0.68125,
+        "F_per_100": 29.39814814814815,
+        "eb_as_planet": 0.2982456140350877
+      }
+    },
+    "B": {
+      "empty": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "reference_detector": {
+        "S": 0.805,
+        "C": 0.805,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "learned_vetter": {
+        "S": 0.6725,
+        "C": 0.7175,
+        "F_per_100": 2.0689655172413794,
+        "eb_as_planet": 0.09166666666666666
+      },
+      "naive_v0": {
+        "S": -0.155,
+        "C": 0.725,
+        "F_per_100": 40.45977011494253,
+        "eb_as_planet": 0.9916666666666667
+      },
+      "starter": {
+        "S": 0.07625,
+        "C": 0.68375,
+        "F_per_100": 27.93103448275862,
+        "eb_as_planet": 0.3416666666666667
+      }
+    },
+    "dev": {
+      "empty": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "reference_detector": {
+        "S": 0.8125,
+        "C": 0.8125,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "learned_vetter": {
+        "S": 0.7,
+        "C": 0.7,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0
+      },
+      "naive_v0": {
+        "S": -0.0375,
+        "C": 0.6875,
+        "F_per_100": 34.93975903614458,
+        "eb_as_planet": 1.0
+      },
+      "starter": {
+        "S": 0.2125,
+        "C": 0.675,
+        "F_per_100": 22.289156626506024,
+        "eb_as_planet": 0.25
+      }
+    }
+  },
+  "rows": {
+    "empty": {
+      "definition": "no rows on any star",
+      "A": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 400,
+        "scored_stars": 864,
+        "credit": 0.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 114,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.031840654083474196
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 70,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.051333797151023736
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 44,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.08041993976357587
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 36,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.09739375591449193
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.562301349252768,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.560034845091607,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 124,
+              "mean_mes": 12.485440869152537,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 126,
+              "mean_mes": 17.469869451185417,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "unbinned": 0,
+          "mes50": null,
+          "mes50_note": "C < 0.5 in every bin"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 350,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.010484308031983462
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 134,
+          "recall": 0.0,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 31,
+              "mean_mes": 8.48396014637192,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 43,
+              "mean_mes": 11.97188015009211,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 16,
+              "mean_mes": 17.745897699700702,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "20+",
+              "n": 44,
+              "mean_mes": 109.24754738554883,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "predicted_from_inj": 0.0,
+          "transfer_gap": 0.0,
+          "rows": {
+            "total": 0,
+            "matched": 0,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 100,
+            "planets": 134,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "B": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 400,
+        "scored_stars": 870,
+        "credit": 0.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 120,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.030272972577420065
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 82,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04398945418684236
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 38,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.09251276141587828
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 30,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.11570330822202776
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.556411793432633,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.557471942259095,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 127,
+              "mean_mes": 12.535058540828425,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 122,
+              "mean_mes": 17.523637454273327,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "unbinned": 1,
+          "mes50": null,
+          "mes50_note": "C < 0.5 in every bin"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 350,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.010484308031983462
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 129,
+          "recall": 0.0,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 41,
+              "mean_mes": 8.682154416604263,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 33,
+              "mean_mes": 12.065879772181733,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 23,
+              "mean_mes": 17.119229247389747,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "20+",
+              "n": 32,
+              "mean_mes": 58.24497847847981,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "predicted_from_inj": 0.0,
+          "transfer_gap": 0.0,
+          "rows": {
+            "total": 0,
+            "matched": 0,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 100,
+            "planets": 129,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "dev": {
+        "S": 0.0,
+        "C": 0.0,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 80,
+        "scored_stars": 166,
+        "credit": 0.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 20,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.1684334709830853
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 8,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3694166475528192
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 10,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3084971078187607
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 15,
+              "mean_mes": 5.5447122588940045,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 15,
+              "mean_mes": 8.462948692385973,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 25,
+              "mean_mes": 12.50124501725757,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 25,
+              "mean_mes": 17.452658833617928,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "unbinned": 0,
+          "mes50": null,
+          "mes50_note": "C < 0.5 in every bin"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 66,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.054358847170121974
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          }
+        },
+        "real": {
+          "stars": 20,
+          "planets": 22,
+          "recall": 0.0,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 8,
+              "mean_mes": 8.444973582062557,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "10-15",
+              "n": 6,
+              "mean_mes": 11.724351996558951,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "15-20",
+              "n": 2,
+              "mean_mes": 16.916753569097594,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "20+",
+              "n": 6,
+              "mean_mes": 29.760334764279182,
+              "credit": 0.0,
+              "C": 0.0
+            }
+          ],
+          "predicted_from_inj": 0.0,
+          "transfer_gap": 0.0,
+          "rows": {
+            "total": 0,
+            "matched": 0,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 66,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 80,
+            "planets": 80,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 30,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 20,
+            "planets": 22,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 196,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      }
+    },
+    "reference_detector": {
+      "definition": "every scored signal with truth MES >= 7.1 claimed at its true ephemeris, nothing else, at most 3 rows per star; evaluator only",
+      "A": {
+        "S": 0.805,
+        "C": 0.805,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 400,
+        "scored_stars": 864,
+        "credit": 322.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 114,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.031840654083474196
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 70,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.051333797151023736
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 44,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.08041993976357587
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 36,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.09739375591449193
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.562301349252768,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.560034845091607,
+              "credit": 72.0,
+              "C": 1.0
+            },
+            {
+              "mes": "10-15",
+              "n": 124,
+              "mean_mes": 12.485440869152537,
+              "credit": 124.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 126,
+              "mean_mes": 17.469869451185417,
+              "credit": 126.0,
+              "C": 1.0
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 7.061168097172187,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 350,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.010484308031983462
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 134,
+          "recall": 0.9552238805970149,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 31,
+              "mean_mes": 8.48396014637192,
+              "credit": 26.0,
+              "C": 0.8387096774193549
+            },
+            {
+              "mes": "10-15",
+              "n": 43,
+              "mean_mes": 11.97188015009211,
+              "credit": 42.0,
+              "C": 0.9767441860465116
+            },
+            {
+              "mes": "15-20",
+              "n": 16,
+              "mean_mes": 17.745897699700702,
+              "credit": 16.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 44,
+              "mean_mes": 109.24754738554883,
+              "credit": 44.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.9688261261228853,
+          "transfer_gap": -0.013602245525870416,
+          "rows": {
+            "total": 128,
+            "matched": 128,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 322.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 322,
+            "C": 0.805,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 100,
+            "planets": 134,
+            "credit": 128.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 100,
+            "C": 0.9552238805970149,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 161.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 161,
+              "C": 0.805,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 161.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 161,
+              "C": 0.805,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.805,
+          "S_at_F_limit": 0.805,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 6,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 4
+        }
+      },
+      "B": {
+        "S": 0.805,
+        "C": 0.805,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 400,
+        "scored_stars": 870,
+        "credit": 322.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 120,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.030272972577420065
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 82,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.04398945418684236
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 38,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.09251276141587828
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 30,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.11570330822202776
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.556411793432633,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.557471942259095,
+              "credit": 72.0,
+              "C": 1.0
+            },
+            {
+              "mes": "10-15",
+              "n": 127,
+              "mean_mes": 12.535058540828425,
+              "credit": 127.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 122,
+              "mean_mes": 17.523637454273327,
+              "credit": 122.0,
+              "C": 1.0
+            }
+          ],
+          "unbinned": 1,
+          "mes50": 7.056941867845865,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 350,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.010484308031983462
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 175,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.02085869534905741
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 129,
+          "recall": 0.9922480620155039,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 41,
+              "mean_mes": 8.682154416604263,
+              "credit": 40.0,
+              "C": 0.975609756097561
+            },
+            {
+              "mes": "10-15",
+              "n": 33,
+              "mean_mes": 12.065879772181733,
+              "credit": 33.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 23,
+              "mean_mes": 17.119229247389747,
+              "credit": 23.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 32,
+              "mean_mes": 58.24497847847981,
+              "credit": 32.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.9700740570451529,
+          "transfer_gap": 0.022174004970350936,
+          "rows": {
+            "total": 128,
+            "matched": 128,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 322.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 322,
+            "C": 0.805,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 100,
+            "planets": 129,
+            "credit": 128.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 100,
+            "C": 0.9922480620155039,
+            "F_per_100": 0.0
+          },
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 161.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 161,
+              "C": 0.805,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 161.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 161,
+              "C": 0.805,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.805,
+          "S_at_F_limit": 0.805,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 1,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 1
+        }
+      },
+      "dev": {
+        "S": 0.8125,
+        "C": 0.8125,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 80,
+        "scored_stars": 166,
+        "credit": 65.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 20,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.1684334709830853
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 8,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3694166475528192
+            ]
+          },
+          "four_year_label": {
+            "k": 0,
+            "n": 10,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3084971078187607
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 15,
+              "mean_mes": 5.5447122588940045,
+              "credit": 0.0,
+              "C": 0.0
+            },
+            {
+              "mes": "7.1-10",
+              "n": 15,
+              "mean_mes": 8.462948692385973,
+              "credit": 15.0,
+              "C": 1.0
+            },
+            {
+              "mes": "10-15",
+              "n": 25,
+              "mean_mes": 12.50124501725757,
+              "credit": 25.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 25,
+              "mean_mes": 17.452658833617928,
+              "credit": 25.0,
+              "C": 1.0
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 7.0038304756399885,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 66,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.054358847170121974
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          }
+        },
+        "real": {
+          "stars": 20,
+          "planets": 22,
+          "recall": 1.0,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 8,
+              "mean_mes": 8.444973582062557,
+              "credit": 8.0,
+              "C": 1.0
+            },
+            {
+              "mes": "10-15",
+              "n": 6,
+              "mean_mes": 11.724351996558951,
+              "credit": 6.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 2,
+              "mean_mes": 16.916753569097594,
+              "credit": 2.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 6,
+              "mean_mes": 29.760334764279182,
+              "credit": 6.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.963581056565463,
+          "transfer_gap": 0.036418943434537,
+          "rows": {
+            "total": 22,
+            "matched": 22,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 66,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 80,
+            "planets": 80,
+            "credit": 65.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 65,
+            "C": 0.8125,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 30,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "real": {
+            "stars": 20,
+            "planets": 22,
+            "credit": 22.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 20,
+            "C": 1.0,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 33.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 33,
+              "C": 0.825,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 32.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 32,
+              "C": 0.8,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.8125,
+          "S_at_F_limit": 0.8125,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 196,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      }
+    },
+    "learned_vetter": {
+      "definition": "baselines/learned_vetter/features.py peaks + HistGradientBoosting trained on labelled train-pool stars; threshold from train out-of-fold S; frozen",
+      "A": {
+        "S": 0.69625,
+        "C": 0.72625,
+        "F_per_100": 1.3888888888888888,
+        "eb_as_planet": 0.05263157894736842,
+        "planets": 400,
+        "scored_stars": 864,
+        "credit": 290.5,
+        "false": 12,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 6,
+            "n": 114,
+            "rate": 0.05263157894736842,
+            "ci95": [
+              0.019557203885543342,
+              0.11104016710828321
+            ]
+          },
+          "flagged_quiet": {
+            "k": 5,
+            "n": 70,
+            "rate": 0.07142857142857142,
+            "ci95": [
+              0.023598460460295297,
+              0.1588724194632481
+            ]
+          },
+          "flagged_variable": {
+            "k": 1,
+            "n": 44,
+            "rate": 0.022727272727272728,
+            "ci95": [
+              0.0005752392133630843,
+              0.12024158220634731
+            ]
+          },
+          "four_year_label": {
+            "k": 8,
+            "n": 36,
+            "rate": 0.2222222222222222,
+            "ci95": [
+              0.10115053034491292,
+              0.3915176491573812
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.011428571428571429,
+            "flagged_minus_null": 0.04120300751879699,
+            "flagged_quiet_minus_null": 0.06,
+            "flagged_variable_minus_null": 0.0112987012987013
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.562301349252768,
+              "credit": 18.0,
+              "C": 0.23076923076923078
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.560034845091607,
+              "credit": 45.0,
+              "C": 0.625
+            },
+            {
+              "mes": "10-15",
+              "n": 124,
+              "mean_mes": 12.485440869152537,
+              "credit": 113.5,
+              "C": 0.9153225806451613
+            },
+            {
+              "mes": "15-20",
+              "n": 126,
+              "mean_mes": 17.469869451185417,
+              "credit": 114.0,
+              "C": 0.9047619047619048
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 7.609533980557341,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 4,
+            "n": 350,
+            "rate": 0.011428571428571429,
+            "ci95": [
+              0.0031224384172971013,
+              0.029001650374401604
+            ]
+          },
+          "random": {
+            "k": 1,
+            "n": 175,
+            "rate": 0.005714285714285714,
+            "ci95": [
+              0.00014466272382057134,
+              0.03142519680860269
+            ]
+          },
+          "tce_only": {
+            "k": 3,
+            "n": 175,
+            "rate": 0.017142857142857144,
+            "ci95": [
+              0.0035493183408363323,
+              0.04927908314502519
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 134,
+          "recall": 0.746268656716418,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 31,
+              "mean_mes": 8.48396014637192,
+              "credit": 19.0,
+              "C": 0.6129032258064516
+            },
+            {
+              "mes": "10-15",
+              "n": 43,
+              "mean_mes": 11.97188015009211,
+              "credit": 34.0,
+              "C": 0.7906976744186046
+            },
+            {
+              "mes": "15-20",
+              "n": 16,
+              "mean_mes": 17.745897699700702,
+              "credit": 13.0,
+              "C": 0.8125
+            },
+            {
+              "mes": "20+",
+              "n": 44,
+              "mean_mes": 109.24754738554883,
+              "credit": 34.0,
+              "C": 0.7727272727272727
+            }
+          ],
+          "predicted_from_inj": 0.8164682253333883,
+          "transfer_gap": -0.0701995686169703,
+          "rows": {
+            "total": 100,
+            "matched": 100,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 4,
+            "stars_with_false": 4,
+            "stars_with_rows": 4,
+            "C": 0.0,
+            "F_per_100": 1.1428571428571428
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 290.5,
+            "false": 2,
+            "stars_with_false": 2,
+            "stars_with_rows": 292,
+            "C": 0.72625,
+            "F_per_100": 0.5
+          },
+          "real": {
+            "stars": 100,
+            "planets": 134,
+            "credit": 100.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 93,
+            "C": 0.746268656716418,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 14,
+            "stars_with_false": 14,
+            "stars_with_rows": 14,
+            "C": 0.0,
+            "F_per_100": 9.333333333333334
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 159.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 159,
+              "C": 0.795,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 131.5,
+              "false": 2,
+              "stars_with_false": 2,
+              "stars_with_rows": 133,
+              "C": 0.6575,
+              "F_per_100": 1.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 1,
+              "C": 0.0,
+              "F_per_100": 0.5714285714285714
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 3,
+              "stars_with_false": 3,
+              "stars_with_rows": 3,
+              "C": 0.0,
+              "F_per_100": 1.7142857142857142
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.71125,
+          "S_at_F_limit": 0.69125,
+          "F_per_100_at_F_limit": 0.9259259259259259
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "B": {
+        "S": 0.6725,
+        "C": 0.7175,
+        "F_per_100": 2.0689655172413794,
+        "eb_as_planet": 0.09166666666666666,
+        "planets": 400,
+        "scored_stars": 870,
+        "credit": 287.0,
+        "false": 18,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 11,
+            "n": 120,
+            "rate": 0.09166666666666666,
+            "ci95": [
+              0.04665226965524842,
+              0.1580985411958335
+            ]
+          },
+          "flagged_quiet": {
+            "k": 11,
+            "n": 82,
+            "rate": 0.13414634146341464,
+            "ci95": [
+              0.06891214514776992,
+              0.22736062472321683
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 38,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.09251276141587828
+            ]
+          },
+          "four_year_label": {
+            "k": 12,
+            "n": 30,
+            "rate": 0.4,
+            "ci95": [
+              0.22655764882859392,
+              0.5939650699481811
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.014285714285714285,
+            "flagged_minus_null": 0.07738095238095237,
+            "flagged_quiet_minus_null": 0.11986062717770035,
+            "flagged_variable_minus_null": -0.014285714285714285
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.556411793432633,
+              "credit": 15.0,
+              "C": 0.19230769230769232
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.557471942259095,
+              "credit": 51.5,
+              "C": 0.7152777777777778
+            },
+            {
+              "mes": "10-15",
+              "n": 127,
+              "mean_mes": 12.535058540828425,
+              "credit": 108.5,
+              "C": 0.8543307086614174
+            },
+            {
+              "mes": "15-20",
+              "n": 122,
+              "mean_mes": 17.523637454273327,
+              "credit": 111.0,
+              "C": 0.9098360655737705
+            }
+          ],
+          "unbinned": 1,
+          "mes50": 7.322101932068018,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 5,
+            "n": 350,
+            "rate": 0.014285714285714285,
+            "ci95": [
+              0.004654374394956924,
+              0.03302149812542883
+            ]
+          },
+          "random": {
+            "k": 1,
+            "n": 175,
+            "rate": 0.005714285714285714,
+            "ci95": [
+              0.00014466272382057134,
+              0.03142519680860269
+            ]
+          },
+          "tce_only": {
+            "k": 4,
+            "n": 175,
+            "rate": 0.022857142857142857,
+            "ci95": [
+              0.006262114385388618,
+              0.057486738875172666
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 129,
+          "recall": 0.8217054263565892,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 41,
+              "mean_mes": 8.682154416604263,
+              "credit": 28.0,
+              "C": 0.6829268292682927
+            },
+            {
+              "mes": "10-15",
+              "n": 33,
+              "mean_mes": 12.065879772181733,
+              "credit": 28.0,
+              "C": 0.8484848484848485
+            },
+            {
+              "mes": "15-20",
+              "n": 23,
+              "mean_mes": 17.119229247389747,
+              "credit": 20.0,
+              "C": 0.8695652173913043
+            },
+            {
+              "mes": "20+",
+              "n": 32,
+              "mean_mes": 58.24497847847981,
+              "credit": 30.0,
+              "C": 0.9375
+            }
+          ],
+          "predicted_from_inj": 0.814436537288337,
+          "transfer_gap": 0.007268889068252182,
+          "rows": {
+            "total": 107,
+            "matched": 106,
+            "neutral": 1,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 23,
+            "stars_with_false": 23,
+            "stars_with_rows": 23,
+            "C": 0.0,
+            "F_per_100": 15.333333333333334
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 287.0,
+            "false": 2,
+            "stars_with_false": 2,
+            "stars_with_rows": 289,
+            "C": 0.7175,
+            "F_per_100": 0.5
+          },
+          "real": {
+            "stars": 100,
+            "planets": 129,
+            "credit": 106.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 95,
+            "C": 0.8217054263565892,
+            "F_per_100": 0.0
+          },
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 5,
+            "stars_with_false": 5,
+            "stars_with_rows": 5,
+            "C": 0.0,
+            "F_per_100": 1.4285714285714286
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 156.5,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 157,
+              "C": 0.7825,
+              "F_per_100": 0.5
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 130.5,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 132,
+              "C": 0.6525,
+              "F_per_100": 0.5
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 1,
+              "C": 0.0,
+              "F_per_100": 0.5714285714285714
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 4,
+              "stars_with_false": 4,
+              "stars_with_rows": 4,
+              "C": 0.0,
+              "F_per_100": 2.2857142857142856
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.63375,
+          "S_at_F_limit": 0.61375,
+          "F_per_100_at_F_limit": 0.9195402298850575
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "dev": {
+        "S": 0.7,
+        "C": 0.7,
+        "F_per_100": 0.0,
+        "eb_as_planet": 0.0,
+        "planets": 80,
+        "scored_stars": 166,
+        "credit": 56.0,
+        "false": 0,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 0,
+            "n": 20,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.1684334709830853
+            ]
+          },
+          "flagged_quiet": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.2646484693970512
+            ]
+          },
+          "flagged_variable": {
+            "k": 0,
+            "n": 8,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.3694166475528192
+            ]
+          },
+          "four_year_label": {
+            "k": 3,
+            "n": 10,
+            "rate": 0.3,
+            "ci95": [
+              0.0667395111777345,
+              0.6524528500599971
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.0,
+            "flagged_minus_null": 0.0,
+            "flagged_quiet_minus_null": 0.0,
+            "flagged_variable_minus_null": 0.0
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 15,
+              "mean_mes": 5.5447122588940045,
+              "credit": 3.0,
+              "C": 0.2
+            },
+            {
+              "mes": "7.1-10",
+              "n": 15,
+              "mean_mes": 8.462948692385973,
+              "credit": 7.0,
+              "C": 0.4666666666666667
+            },
+            {
+              "mes": "10-15",
+              "n": 25,
+              "mean_mes": 12.50124501725757,
+              "credit": 22.0,
+              "C": 0.88
+            },
+            {
+              "mes": "15-20",
+              "n": 25,
+              "mean_mes": 17.452658833617928,
+              "credit": 24.0,
+              "C": 0.96
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 8.78861775084336,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 0,
+            "n": 66,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.054358847170121974
+            ]
+          },
+          "random": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          },
+          "tce_only": {
+            "k": 0,
+            "n": 33,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.10576281007457927
+            ]
+          }
+        },
+        "real": {
+          "stars": 20,
+          "planets": 22,
+          "recall": 0.8636363636363636,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 8,
+              "mean_mes": 8.444973582062557,
+              "credit": 5.0,
+              "C": 0.625
+            },
+            {
+              "mes": "10-15",
+              "n": 6,
+              "mean_mes": 11.724351996558951,
+              "credit": 6.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 2,
+              "mean_mes": 16.916753569097594,
+              "credit": 2.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 6,
+              "mean_mes": 29.760334764279182,
+              "credit": 6.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.7334274898269864,
+          "transfer_gap": 0.1302088738093773,
+          "rows": {
+            "total": 19,
+            "matched": 19,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 0,
+            "unknown_per_100_stars": 0.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 66,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 0,
+            "C": 0.0,
+            "F_per_100": 0.0
+          },
+          "inj": {
+            "stars": 80,
+            "planets": 80,
+            "credit": 56.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 56,
+            "C": 0.7,
+            "F_per_100": 0.0
+          },
+          "eb": {
+            "stars": 30,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 3,
+            "stars_with_false": 3,
+            "stars_with_rows": 3,
+            "C": 0.0,
+            "F_per_100": 10.0
+          },
+          "real": {
+            "stars": 20,
+            "planets": 22,
+            "credit": 19.0,
+            "false": 0,
+            "stars_with_false": 0,
+            "stars_with_rows": 19,
+            "C": 0.8636363636363636,
+            "F_per_100": 0.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 29.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 29,
+              "C": 0.725,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 27.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 27,
+              "C": 0.675,
+              "F_per_100": 0.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            },
+            "tce_only": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 0,
+              "stars_with_false": 0,
+              "stars_with_rows": 0,
+              "C": 0.0,
+              "F_per_100": 0.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.7,
+          "S_at_F_limit": 0.7,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 196,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      }
+    },
+    "naive_v0": {
+      "definition": "baselines/naive_v0 (naive search, SNR 7.1, no vetting), graded on the survey-r1 task",
+      "A": {
+        "S": -0.15875,
+        "C": 0.72875,
+        "F_per_100": 41.08796296296296,
+        "eb_as_planet": 1.0,
+        "planets": 400,
+        "scored_stars": 864,
+        "credit": 291.5,
+        "false": 355,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 114,
+            "n": 114,
+            "rate": 1.0,
+            "ci95": [
+              0.9681593459165259,
+              1.0
+            ]
+          },
+          "flagged_quiet": {
+            "k": 70,
+            "n": 70,
+            "rate": 1.0,
+            "ci95": [
+              0.9486662028489763,
+              1.0
+            ]
+          },
+          "flagged_variable": {
+            "k": 44,
+            "n": 44,
+            "rate": 1.0,
+            "ci95": [
+              0.9195800602364241,
+              1.0
+            ]
+          },
+          "four_year_label": {
+            "k": 32,
+            "n": 36,
+            "rate": 0.8888888888888888,
+            "ci95": [
+              0.7393890794891707,
+              0.9688838600549847
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.49714285714285716,
+            "flagged_minus_null": 0.5028571428571429,
+            "flagged_quiet_minus_null": 0.5028571428571429,
+            "flagged_variable_minus_null": 0.5028571428571429
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.562301349252768,
+              "credit": 19.0,
+              "C": 0.24358974358974358
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.560034845091607,
+              "credit": 46.0,
+              "C": 0.6388888888888888
+            },
+            {
+              "mes": "10-15",
+              "n": 124,
+              "mean_mes": 12.485440869152537,
+              "credit": 110.5,
+              "C": 0.8911290322580645
+            },
+            {
+              "mes": "15-20",
+              "n": 126,
+              "mean_mes": 17.469869451185417,
+              "credit": 116.0,
+              "C": 0.9206349206349206
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 7.5067771303374204,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 174,
+            "n": 350,
+            "rate": 0.49714285714285716,
+            "ci95": [
+              0.4435497659693227,
+              0.5507846829875176
+            ]
+          },
+          "random": {
+            "k": 62,
+            "n": 175,
+            "rate": 0.35428571428571426,
+            "ci95": [
+              0.28358988660962325,
+              0.4300108854283745
+            ]
+          },
+          "tce_only": {
+            "k": 112,
+            "n": 175,
+            "rate": 0.64,
+            "ci95": [
+              0.5641251007190227,
+              0.7110436064907539
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 134,
+          "recall": 0.6940298507462687,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 31,
+              "mean_mes": 8.48396014637192,
+              "credit": 14.0,
+              "C": 0.45161290322580644
+            },
+            {
+              "mes": "10-15",
+              "n": 43,
+              "mean_mes": 11.97188015009211,
+              "credit": 30.0,
+              "C": 0.6976744186046512
+            },
+            {
+              "mes": "15-20",
+              "n": 16,
+              "mean_mes": 17.745897699700702,
+              "credit": 13.0,
+              "C": 0.8125
+            },
+            {
+              "mes": "20+",
+              "n": 44,
+              "mean_mes": 109.24754738554883,
+              "credit": 36.0,
+              "C": 0.8181818181818182
+            }
+          ],
+          "predicted_from_inj": 0.8211818014841352,
+          "transfer_gap": -0.12715195073786656,
+          "rows": {
+            "total": 98,
+            "matched": 93,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 5,
+            "unknown_per_100_stars": 5.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 174,
+            "stars_with_false": 174,
+            "stars_with_rows": 174,
+            "C": 0.0,
+            "F_per_100": 49.714285714285715
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 291.5,
+            "false": 67,
+            "stars_with_false": 67,
+            "stars_with_rows": 359,
+            "C": 0.72875,
+            "F_per_100": 16.75
+          },
+          "real": {
+            "stars": 100,
+            "planets": 134,
+            "credit": 93.0,
+            "false": 5,
+            "stars_with_false": 5,
+            "stars_with_rows": 98,
+            "C": 0.6940298507462687,
+            "F_per_100": 5.0
+          },
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 146,
+            "stars_with_false": 146,
+            "stars_with_rows": 146,
+            "C": 0.0,
+            "F_per_100": 97.33333333333333
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 159.0,
+              "false": 13,
+              "stars_with_false": 13,
+              "stars_with_rows": 172,
+              "C": 0.795,
+              "F_per_100": 6.5
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 132.5,
+              "false": 54,
+              "stars_with_false": 54,
+              "stars_with_rows": 187,
+              "C": 0.6625,
+              "F_per_100": 27.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 62,
+              "stars_with_false": 62,
+              "stars_with_rows": 62,
+              "C": 0.0,
+              "F_per_100": 35.42857142857143
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 112,
+              "stars_with_false": 112,
+              "stars_with_rows": 112,
+              "C": 0.0,
+              "F_per_100": 64.0
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "B": {
+        "S": -0.155,
+        "C": 0.725,
+        "F_per_100": 40.45977011494253,
+        "eb_as_planet": 0.9916666666666667,
+        "planets": 400,
+        "scored_stars": 870,
+        "credit": 290.0,
+        "false": 352,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 119,
+            "n": 120,
+            "rate": 0.9916666666666667,
+            "ci95": [
+              0.9544444867664075,
+              0.9997890405218783
+            ]
+          },
+          "flagged_quiet": {
+            "k": 81,
+            "n": 82,
+            "rate": 0.9878048780487805,
+            "ci95": [
+              0.9339172906106936,
+              0.9996912939036298
+            ]
+          },
+          "flagged_variable": {
+            "k": 38,
+            "n": 38,
+            "rate": 1.0,
+            "ci95": [
+              0.9074872385841217,
+              1.0
+            ]
+          },
+          "four_year_label": {
+            "k": 26,
+            "n": 30,
+            "rate": 0.8666666666666667,
+            "ci95": [
+              0.6927816497238737,
+              0.9624465036616365
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.4542857142857143,
+            "flagged_minus_null": 0.5373809523809524,
+            "flagged_quiet_minus_null": 0.5335191637630662,
+            "flagged_variable_minus_null": 0.5457142857142857
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.556411793432633,
+              "credit": 17.0,
+              "C": 0.21794871794871795
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.557471942259095,
+              "credit": 47.5,
+              "C": 0.6597222222222222
+            },
+            {
+              "mes": "10-15",
+              "n": 127,
+              "mean_mes": 12.535058540828425,
+              "credit": 109.5,
+              "C": 0.8622047244094488
+            },
+            {
+              "mes": "15-20",
+              "n": 122,
+              "mean_mes": 17.523637454273327,
+              "credit": 115.0,
+              "C": 0.9426229508196722
+            }
+          ],
+          "unbinned": 1,
+          "mes50": 7.47244535882607,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 159,
+            "n": 350,
+            "rate": 0.4542857142857143,
+            "ci95": [
+              0.40127516808823205,
+              0.5080761252356354
+            ]
+          },
+          "random": {
+            "k": 50,
+            "n": 175,
+            "rate": 0.2857142857142857,
+            "ci95": [
+              0.2200866294801267,
+              0.3587588030826674
+            ]
+          },
+          "tce_only": {
+            "k": 109,
+            "n": 175,
+            "rate": 0.6228571428571429,
+            "ci95": [
+              0.546596954327937,
+              0.6948795769967979
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 129,
+          "recall": 0.6976744186046512,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 41,
+              "mean_mes": 8.682154416604263,
+              "credit": 21.0,
+              "C": 0.5121951219512195
+            },
+            {
+              "mes": "10-15",
+              "n": 33,
+              "mean_mes": 12.065879772181733,
+              "credit": 21.0,
+              "C": 0.6363636363636364
+            },
+            {
+              "mes": "15-20",
+              "n": 23,
+              "mean_mes": 17.119229247389747,
+              "credit": 18.0,
+              "C": 0.782608695652174
+            },
+            {
+              "mes": "20+",
+              "n": 32,
+              "mean_mes": 58.24497847847981,
+              "credit": 30.0,
+              "C": 0.9375
+            }
+          ],
+          "predicted_from_inj": 0.8135126233420422,
+          "transfer_gap": -0.11583820473739104,
+          "rows": {
+            "total": 97,
+            "matched": 90,
+            "neutral": 1,
+            "duplicate": 0,
+            "unknown": 6,
+            "unknown_per_100_stars": 6.0
+          }
+        },
+        "populations": {
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 145,
+            "stars_with_false": 145,
+            "stars_with_rows": 145,
+            "C": 0.0,
+            "F_per_100": 96.66666666666667
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 290.0,
+            "false": 74,
+            "stars_with_false": 74,
+            "stars_with_rows": 365,
+            "C": 0.725,
+            "F_per_100": 18.5
+          },
+          "real": {
+            "stars": 100,
+            "planets": 129,
+            "credit": 90.0,
+            "false": 6,
+            "stars_with_false": 6,
+            "stars_with_rows": 97,
+            "C": 0.6976744186046512,
+            "F_per_100": 6.0
+          },
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 159,
+            "stars_with_false": 159,
+            "stars_with_rows": 159,
+            "C": 0.0,
+            "F_per_100": 45.42857142857143
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 156.5,
+              "false": 21,
+              "stars_with_false": 21,
+              "stars_with_rows": 178,
+              "C": 0.7825,
+              "F_per_100": 10.5
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 133.5,
+              "false": 53,
+              "stars_with_false": 53,
+              "stars_with_rows": 187,
+              "C": 0.6675,
+              "F_per_100": 26.5
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 50,
+              "stars_with_false": 50,
+              "stars_with_rows": 50,
+              "C": 0.0,
+              "F_per_100": 28.571428571428573
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 109,
+              "stars_with_false": 109,
+              "stars_with_rows": 109,
+              "C": 0.0,
+              "F_per_100": 62.285714285714285
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "dev": {
+        "S": -0.0375,
+        "C": 0.6875,
+        "F_per_100": 34.93975903614458,
+        "eb_as_planet": 1.0,
+        "planets": 80,
+        "scored_stars": 166,
+        "credit": 55.0,
+        "false": 58,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 20,
+            "n": 20,
+            "rate": 1.0,
+            "ci95": [
+              0.8315665290169147,
+              1.0
+            ]
+          },
+          "flagged_quiet": {
+            "k": 12,
+            "n": 12,
+            "rate": 1.0,
+            "ci95": [
+              0.7353515306029488,
+              1.0
+            ]
+          },
+          "flagged_variable": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "ci95": [
+              0.6305833524471807,
+              1.0
+            ]
+          },
+          "four_year_label": {
+            "k": 9,
+            "n": 10,
+            "rate": 0.9,
+            "ci95": [
+              0.5549838829718046,
+              0.9974714214555382
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.36363636363636365,
+            "flagged_minus_null": 0.6363636363636364,
+            "flagged_quiet_minus_null": 0.6363636363636364,
+            "flagged_variable_minus_null": 0.6363636363636364
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 15,
+              "mean_mes": 5.5447122588940045,
+              "credit": 2.0,
+              "C": 0.13333333333333333
+            },
+            {
+              "mes": "7.1-10",
+              "n": 15,
+              "mean_mes": 8.462948692385973,
+              "credit": 7.0,
+              "C": 0.4666666666666667
+            },
+            {
+              "mes": "10-15",
+              "n": 25,
+              "mean_mes": 12.50124501725757,
+              "credit": 22.0,
+              "C": 0.88
+            },
+            {
+              "mes": "15-20",
+              "n": 25,
+              "mean_mes": 17.452658833617928,
+              "credit": 24.0,
+              "C": 0.96
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 8.78861775084336,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 24,
+            "n": 66,
+            "rate": 0.36363636363636365,
+            "ci95": [
+              0.24867778305733335,
+              0.4912605684896848
+            ]
+          },
+          "random": {
+            "k": 7,
+            "n": 33,
+            "rate": 0.21212121212121213,
+            "ci95": [
+              0.0898042445427015,
+              0.38908091967411307
+            ]
+          },
+          "tce_only": {
+            "k": 17,
+            "n": 33,
+            "rate": 0.5151515151515151,
+            "ci95": [
+              0.33544447838855584,
+              0.6920365563952677
+            ]
+          }
+        },
+        "real": {
+          "stars": 20,
+          "planets": 22,
+          "recall": 0.8181818181818182,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 8,
+              "mean_mes": 8.444973582062557,
+              "credit": 4.0,
+              "C": 0.5
+            },
+            {
+              "mes": "10-15",
+              "n": 6,
+              "mean_mes": 11.724351996558951,
+              "credit": 6.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 2,
+              "mean_mes": 16.916753569097594,
+              "credit": 2.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 6,
+              "mean_mes": 29.760334764279182,
+              "credit": 6.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.7309995602646839,
+          "transfer_gap": 0.0871822579171343,
+          "rows": {
+            "total": 19,
+            "matched": 18,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 1,
+            "unknown_per_100_stars": 5.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 66,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 24,
+            "stars_with_false": 24,
+            "stars_with_rows": 24,
+            "C": 0.0,
+            "F_per_100": 36.36363636363637
+          },
+          "inj": {
+            "stars": 80,
+            "planets": 80,
+            "credit": 55.0,
+            "false": 14,
+            "stars_with_false": 14,
+            "stars_with_rows": 69,
+            "C": 0.6875,
+            "F_per_100": 17.5
+          },
+          "eb": {
+            "stars": 30,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 29,
+            "stars_with_false": 29,
+            "stars_with_rows": 29,
+            "C": 0.0,
+            "F_per_100": 96.66666666666667
+          },
+          "real": {
+            "stars": 20,
+            "planets": 22,
+            "credit": 18.0,
+            "false": 1,
+            "stars_with_false": 1,
+            "stars_with_rows": 19,
+            "C": 0.8181818181818182,
+            "F_per_100": 5.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 29.0,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 30,
+              "C": 0.725,
+              "F_per_100": 2.5
+            },
+            "tce_only": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 26.0,
+              "false": 13,
+              "stars_with_false": 13,
+              "stars_with_rows": 39,
+              "C": 0.65,
+              "F_per_100": 32.5
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 7,
+              "stars_with_false": 7,
+              "stars_with_rows": 7,
+              "C": 0.0,
+              "F_per_100": 21.21212121212121
+            },
+            "tce_only": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 17,
+              "stars_with_false": 17,
+              "stars_with_rows": 17,
+              "C": 0.0,
+              "F_per_100": 51.515151515151516
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 196,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      }
+    },
+    "starter": {
+      "definition": "workspace/solution (the starter: its strongest peak if it clears SNR 8 and is no deeper than 3%), graded on the survey-r1 task",
+      "A": {
+        "S": 0.04625,
+        "C": 0.68125,
+        "F_per_100": 29.39814814814815,
+        "eb_as_planet": 0.2982456140350877,
+        "planets": 400,
+        "scored_stars": 864,
+        "credit": 272.5,
+        "false": 254,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 34,
+            "n": 114,
+            "rate": 0.2982456140350877,
+            "ci95": [
+              0.21617973095986615,
+              0.39110274847124493
+            ]
+          },
+          "flagged_quiet": {
+            "k": 30,
+            "n": 70,
+            "rate": 0.42857142857142855,
+            "ci95": [
+              0.3108679181036047,
+              0.5525128931884637
+            ]
+          },
+          "flagged_variable": {
+            "k": 4,
+            "n": 44,
+            "rate": 0.09090909090909091,
+            "ci95": [
+              0.02532842170345074,
+              0.2166865894652747
+            ]
+          },
+          "four_year_label": {
+            "k": 26,
+            "n": 36,
+            "rate": 0.7222222222222222,
+            "ci95": [
+              0.5481388549321611,
+              0.857997552736598
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.4542857142857143,
+            "flagged_minus_null": -0.1560401002506266,
+            "flagged_quiet_minus_null": -0.025714285714285745,
+            "flagged_variable_minus_null": -0.36337662337662335
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.562301349252768,
+              "credit": 11.0,
+              "C": 0.14102564102564102
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.560034845091607,
+              "credit": 38.0,
+              "C": 0.5277777777777778
+            },
+            {
+              "mes": "10-15",
+              "n": 124,
+              "mean_mes": 12.485440869152537,
+              "credit": 108.5,
+              "C": 0.875
+            },
+            {
+              "mes": "15-20",
+              "n": 126,
+              "mean_mes": 17.469869451185417,
+              "credit": 115.0,
+              "C": 0.9126984126984127
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 8.344728019423624,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 159,
+            "n": 350,
+            "rate": 0.4542857142857143,
+            "ci95": [
+              0.40127516808823205,
+              0.5080761252356354
+            ]
+          },
+          "random": {
+            "k": 53,
+            "n": 175,
+            "rate": 0.3028571428571429,
+            "ci95": [
+              0.23580029693922733,
+              0.37673171005407713
+            ]
+          },
+          "tce_only": {
+            "k": 106,
+            "n": 175,
+            "rate": 0.6057142857142858,
+            "ci95": [
+              0.5291626291492766,
+              0.6786209247493973
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 134,
+          "recall": 0.6716417910447762,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 31,
+              "mean_mes": 8.48396014637192,
+              "credit": 12.0,
+              "C": 0.3870967741935484
+            },
+            {
+              "mes": "10-15",
+              "n": 43,
+              "mean_mes": 11.97188015009211,
+              "credit": 29.0,
+              "C": 0.6744186046511628
+            },
+            {
+              "mes": "15-20",
+              "n": 16,
+              "mean_mes": 17.745897699700702,
+              "credit": 13.0,
+              "C": 0.8125
+            },
+            {
+              "mes": "20+",
+              "n": 44,
+              "mean_mes": 109.24754738554883,
+              "credit": 36.0,
+              "C": 0.8181818181818182
+            }
+          ],
+          "predicted_from_inj": 0.7822939544154255,
+          "transfer_gap": -0.11065216337064931,
+          "rows": {
+            "total": 95,
+            "matched": 90,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 5,
+            "unknown_per_100_stars": 5.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 159,
+            "stars_with_false": 159,
+            "stars_with_rows": 159,
+            "C": 0.0,
+            "F_per_100": 45.42857142857143
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 272.5,
+            "false": 61,
+            "stars_with_false": 61,
+            "stars_with_rows": 334,
+            "C": 0.68125,
+            "F_per_100": 15.25
+          },
+          "real": {
+            "stars": 100,
+            "planets": 134,
+            "credit": 90.0,
+            "false": 5,
+            "stars_with_false": 5,
+            "stars_with_rows": 95,
+            "C": 0.6716417910447762,
+            "F_per_100": 5.0
+          },
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 60,
+            "stars_with_false": 60,
+            "stars_with_rows": 60,
+            "C": 0.0,
+            "F_per_100": 40.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 150.0,
+              "false": 12,
+              "stars_with_false": 12,
+              "stars_with_rows": 162,
+              "C": 0.75,
+              "F_per_100": 6.0
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 122.5,
+              "false": 49,
+              "stars_with_false": 49,
+              "stars_with_rows": 172,
+              "C": 0.6125,
+              "F_per_100": 24.5
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 53,
+              "stars_with_false": 53,
+              "stars_with_rows": 53,
+              "C": 0.0,
+              "F_per_100": 30.285714285714285
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 106,
+              "stars_with_false": 106,
+              "stars_with_rows": 106,
+              "C": 0.0,
+              "F_per_100": 60.57142857142857
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "B": {
+        "S": 0.07625,
+        "C": 0.68375,
+        "F_per_100": 27.93103448275862,
+        "eb_as_planet": 0.3416666666666667,
+        "planets": 400,
+        "scored_stars": 870,
+        "credit": 273.5,
+        "false": 243,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 41,
+            "n": 120,
+            "rate": 0.3416666666666667,
+            "ci95": [
+              0.25755434765186624,
+              0.43380059718495123
+            ]
+          },
+          "flagged_quiet": {
+            "k": 36,
+            "n": 82,
+            "rate": 0.43902439024390244,
+            "ci95": [
+              0.3295502074255031,
+              0.5530335815632834
+            ]
+          },
+          "flagged_variable": {
+            "k": 5,
+            "n": 38,
+            "rate": 0.13157894736842105,
+            "ci95": [
+              0.044137440057914507,
+              0.280863845883753
+            ]
+          },
+          "four_year_label": {
+            "k": 24,
+            "n": 30,
+            "rate": 0.8,
+            "ci95": [
+              0.6143334890033929,
+              0.9228644879989343
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.37714285714285717,
+            "flagged_minus_null": -0.035476190476190494,
+            "flagged_quiet_minus_null": 0.06188153310104527,
+            "flagged_variable_minus_null": -0.24556390977443612
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 78,
+              "mean_mes": 5.556411793432633,
+              "credit": 8.0,
+              "C": 0.10256410256410256
+            },
+            {
+              "mes": "7.1-10",
+              "n": 72,
+              "mean_mes": 8.557471942259095,
+              "credit": 44.5,
+              "C": 0.6180555555555556
+            },
+            {
+              "mes": "10-15",
+              "n": 127,
+              "mean_mes": 12.535058540828425,
+              "credit": 105.0,
+              "C": 0.8267716535433071
+            },
+            {
+              "mes": "15-20",
+              "n": 122,
+              "mean_mes": 17.523637454273327,
+              "credit": 115.0,
+              "C": 0.9426229508196722
+            }
+          ],
+          "unbinned": 1,
+          "mes50": 7.870182519574486,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 132,
+            "n": 350,
+            "rate": 0.37714285714285717,
+            "ci95": [
+              0.326167829796129,
+              0.43021570484201077
+            ]
+          },
+          "random": {
+            "k": 38,
+            "n": 175,
+            "rate": 0.21714285714285714,
+            "ci95": [
+              0.1584805236620258,
+              0.28564243931669286
+            ]
+          },
+          "tce_only": {
+            "k": 94,
+            "n": 175,
+            "rate": 0.5371428571428571,
+            "ci95": [
+              0.46032497961248453,
+              0.6126812512242059
+            ]
+          }
+        },
+        "real": {
+          "stars": 100,
+          "planets": 129,
+          "recall": 0.6666666666666666,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 41,
+              "mean_mes": 8.682154416604263,
+              "credit": 17.0,
+              "C": 0.4146341463414634
+            },
+            {
+              "mes": "10-15",
+              "n": 33,
+              "mean_mes": 12.065879772181733,
+              "credit": 21.0,
+              "C": 0.6363636363636364
+            },
+            {
+              "mes": "15-20",
+              "n": 23,
+              "mean_mes": 17.119229247389747,
+              "credit": 18.0,
+              "C": 0.782608695652174
+            },
+            {
+              "mes": "20+",
+              "n": 32,
+              "mean_mes": 58.24497847847981,
+              "credit": 30.0,
+              "C": 0.9375
+            }
+          ],
+          "predicted_from_inj": 0.788488039489052,
+          "transfer_gap": -0.12182137282238537,
+          "rows": {
+            "total": 93,
+            "matched": 86,
+            "neutral": 1,
+            "duplicate": 0,
+            "unknown": 6,
+            "unknown_per_100_stars": 6.0
+          }
+        },
+        "populations": {
+          "eb": {
+            "stars": 150,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 65,
+            "stars_with_false": 65,
+            "stars_with_rows": 65,
+            "C": 0.0,
+            "F_per_100": 43.333333333333336
+          },
+          "inj": {
+            "stars": 400,
+            "planets": 400,
+            "credit": 273.5,
+            "false": 70,
+            "stars_with_false": 70,
+            "stars_with_rows": 344,
+            "C": 0.68375,
+            "F_per_100": 17.5
+          },
+          "real": {
+            "stars": 100,
+            "planets": 129,
+            "credit": 86.0,
+            "false": 6,
+            "stars_with_false": 6,
+            "stars_with_rows": 93,
+            "C": 0.6666666666666666,
+            "F_per_100": 6.0
+          },
+          "null": {
+            "stars": 350,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 132,
+            "stars_with_false": 132,
+            "stars_with_rows": 132,
+            "C": 0.0,
+            "F_per_100": 37.714285714285715
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 150.5,
+              "false": 19,
+              "stars_with_false": 19,
+              "stars_with_rows": 170,
+              "C": 0.7525,
+              "F_per_100": 9.5
+            },
+            "tce_only": {
+              "stars": 200,
+              "planets": 200,
+              "credit": 123.0,
+              "false": 51,
+              "stars_with_false": 51,
+              "stars_with_rows": 174,
+              "C": 0.615,
+              "F_per_100": 25.5
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 38,
+              "stars_with_false": 38,
+              "stars_with_rows": 38,
+              "C": 0.0,
+              "F_per_100": 21.714285714285715
+            },
+            "tce_only": {
+              "stars": 175,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 94,
+              "stars_with_false": 94,
+              "stars_with_rows": 94,
+              "C": 0.0,
+              "F_per_100": 53.714285714285715
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.0
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 1000,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      },
+      "dev": {
+        "S": 0.2125,
+        "C": 0.675,
+        "F_per_100": 22.289156626506024,
+        "eb_as_planet": 0.25,
+        "planets": 80,
+        "scored_stars": 166,
+        "credit": 54.0,
+        "false": 37,
+        "eb_as_planet_slices": {
+          "flagged": {
+            "k": 5,
+            "n": 20,
+            "rate": 0.25,
+            "ci95": [
+              0.08657146910143451,
+              0.49104587170795766
+            ]
+          },
+          "flagged_quiet": {
+            "k": 4,
+            "n": 12,
+            "rate": 0.3333333333333333,
+            "ci95": [
+              0.09924609114958335,
+              0.6511244935811857
+            ]
+          },
+          "flagged_variable": {
+            "k": 1,
+            "n": 8,
+            "rate": 0.125,
+            "ci95": [
+              0.0031597235312519085,
+              0.5265096708752064
+            ]
+          },
+          "four_year_label": {
+            "k": 9,
+            "n": 10,
+            "rate": 0.9,
+            "ci95": [
+              0.5549838829718046,
+              0.9974714214555382
+            ]
+          },
+          "abstention_check": {
+            "null_rate": 0.2878787878787879,
+            "flagged_minus_null": -0.0378787878787879,
+            "flagged_quiet_minus_null": 0.045454545454545414,
+            "flagged_variable_minus_null": -0.1628787878787879
+          }
+        },
+        "completeness": {
+          "by_mes": [
+            {
+              "mes": "4-7.1",
+              "n": 15,
+              "mean_mes": 5.5447122588940045,
+              "credit": 1.0,
+              "C": 0.06666666666666667
+            },
+            {
+              "mes": "7.1-10",
+              "n": 15,
+              "mean_mes": 8.462948692385973,
+              "credit": 7.0,
+              "C": 0.4666666666666667
+            },
+            {
+              "mes": "10-15",
+              "n": 25,
+              "mean_mes": 12.50124501725757,
+              "credit": 22.0,
+              "C": 0.88
+            },
+            {
+              "mes": "15-20",
+              "n": 25,
+              "mean_mes": 17.452658833617928,
+              "credit": 24.0,
+              "C": 0.96
+            }
+          ],
+          "unbinned": 0,
+          "mes50": 8.78861775084336,
+          "mes50_note": "interpolated"
+        },
+        "null_false_alarms": {
+          "all": {
+            "k": 19,
+            "n": 66,
+            "rate": 0.2878787878787879,
+            "ci95": [
+              0.18304022541810777,
+              0.41250675986075114
+            ]
+          },
+          "random": {
+            "k": 5,
+            "n": 33,
+            "rate": 0.15151515151515152,
+            "ci95": [
+              0.0510886993560814,
+              0.31898981971043605
+            ]
+          },
+          "tce_only": {
+            "k": 14,
+            "n": 33,
+            "rate": 0.42424242424242425,
+            "ci95": [
+              0.25476182273469605,
+              0.6078469838121145
+            ]
+          }
+        },
+        "real": {
+          "stars": 20,
+          "planets": 22,
+          "recall": 0.8181818181818182,
+          "recall_by_mes": [
+            {
+              "mes": "7.1-10",
+              "n": 8,
+              "mean_mes": 8.444973582062557,
+              "credit": 4.0,
+              "C": 0.5
+            },
+            {
+              "mes": "10-15",
+              "n": 6,
+              "mean_mes": 11.724351996558951,
+              "credit": 6.0,
+              "C": 1.0
+            },
+            {
+              "mes": "15-20",
+              "n": 2,
+              "mean_mes": 16.916753569097594,
+              "credit": 2.0,
+              "C": 1.0
+            },
+            {
+              "mes": "20+",
+              "n": 6,
+              "mean_mes": 29.760334764279182,
+              "credit": 6.0,
+              "C": 1.0
+            }
+          ],
+          "predicted_from_inj": 0.7285716307023814,
+          "transfer_gap": 0.08961018747943683,
+          "rows": {
+            "total": 19,
+            "matched": 18,
+            "neutral": 0,
+            "duplicate": 0,
+            "unknown": 1,
+            "unknown_per_100_stars": 5.0
+          }
+        },
+        "populations": {
+          "null": {
+            "stars": 66,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 19,
+            "stars_with_false": 19,
+            "stars_with_rows": 19,
+            "C": 0.0,
+            "F_per_100": 28.78787878787879
+          },
+          "inj": {
+            "stars": 80,
+            "planets": 80,
+            "credit": 54.0,
+            "false": 13,
+            "stars_with_false": 13,
+            "stars_with_rows": 67,
+            "C": 0.675,
+            "F_per_100": 16.25
+          },
+          "eb": {
+            "stars": 30,
+            "planets": 0,
+            "credit": 0.0,
+            "false": 14,
+            "stars_with_false": 14,
+            "stars_with_rows": 14,
+            "C": 0.0,
+            "F_per_100": 46.666666666666664
+          },
+          "real": {
+            "stars": 20,
+            "planets": 22,
+            "credit": 18.0,
+            "false": 1,
+            "stars_with_false": 1,
+            "stars_with_rows": 19,
+            "C": 0.8181818181818182,
+            "F_per_100": 5.0
+          }
+        },
+        "by_host": {
+          "inj": {
+            "random": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 29.0,
+              "false": 1,
+              "stars_with_false": 1,
+              "stars_with_rows": 30,
+              "C": 0.725,
+              "F_per_100": 2.5
+            },
+            "tce_only": {
+              "stars": 40,
+              "planets": 40,
+              "credit": 25.0,
+              "false": 12,
+              "stars_with_false": 12,
+              "stars_with_rows": 37,
+              "C": 0.625,
+              "F_per_100": 30.0
+            }
+          },
+          "null": {
+            "random": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 5,
+              "stars_with_false": 5,
+              "stars_with_rows": 5,
+              "C": 0.0,
+              "F_per_100": 15.151515151515152
+            },
+            "tce_only": {
+              "stars": 33,
+              "planets": 0,
+              "credit": 0.0,
+              "false": 14,
+              "stars_with_false": 14,
+              "stars_with_rows": 14,
+              "C": 0.0,
+              "F_per_100": 42.42424242424242
+            }
+          }
+        },
+        "sweep_at_F_limit": {
+          "F_limit_per_100": 1.0,
+          "C_at_F_limit": 0.0125,
+          "S_at_F_limit": 0.0,
+          "F_per_100_at_F_limit": 0.6024096385542169
+        },
+        "inputs": {
+          "missing_stars": 0,
+          "unknown_stars": 0,
+          "rows_over_cap": 0,
+          "runs": 196,
+          "not_ok": {},
+          "rows_invalid": 0,
+          "stars_over_cap": 0
+        }
+      }
+    }
+  }
+}

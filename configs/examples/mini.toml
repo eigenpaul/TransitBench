@@ -1,0 +1,26 @@
+# Two mini train tasks, two rollouts each, through prime-rl's eval and its env servers. Install as in survey.toml,
+# then run from the prime-rl checkout:
+#   TRANSITBENCH_DATA=$DATA uv run --no-sync eval @ $TB/configs/examples/mini.toml -m <model> --no-monitors.prime
+# Every mini task is drawn from the mini pool with the evaluator's secret; both live in the evaluator's data
+# directory. Neither is distributed with this repository, so this config runs only where they exist. Reaching 12
+# turns is the normal end of a mini run and is graded, so env.agent.scoring.skip_on_truncated stays false.
+group_size = 2
+
+[select]
+limit = 2                                       # the taskset is infinite: every run needs a bound
+
+[concurrency]
+min_inflight = 4
+max_inflight = 4
+
+[sampling]
+max_completion_tokens = 4096
+chat_template_kwargs = { enable_thinking = false }
+
+[[source]]
+name = "transitbench-mini"
+env.taskset.id = "transitbench-mini"
+env.taskset.split = "train"
+env.agent.max_turns = 12
+env.agent.max_total_tokens = 32768
+env.agent.runtime.labels = ["transitbench", "mini"]

@@ -1,0 +1,18 @@
+# Libraries in both TransitBench images, at the versions in ../uv.lock.
+# tests/test_image_context.py checks every pin in requirements.txt against uv.lock.
+# Regenerate requirements.txt (hashes for every platform's wheels) from the repo root with:
+#   uv pip compile image/requirements.in --universal --python-version 3.12 --generate-hashes \
+#     --no-header --output-file image/requirements.txt
+numpy==2.5.4
+scipy==1.18.1
+astropy==8.0.2
+scikit-learn==1.9.1
+# Transitive, pinned so the image matches uv.lock exactly.
+astropy-iers-data==0.2026.10.19.0.52.1
+pyerfa==2.0.1.5
+packaging==26.3
+pyyaml==6.0.3
+cloudpickle==3.1.2
+joblib==1.6.0
+narwhals==2.27.1
+threadpoolctl==3.7.0

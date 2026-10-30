@@ -1,0 +1,56 @@
+{
+ "release": "r1",
+ "window": [
+  10,
+  11,
+  12,
+  13
+ ],
+ "secret_sha256": "42fef42a2276474021d056ac0db59535a3f033da0f657e057a1a04ae24a9cf88",
+ "pool_salt_sha256": "5ba2e3baa3aaa7a76ef4b3002277748bef55574fb98d262b30f132b567be83ee",
+ "tce_audit_sha256": "a4fe603272a2370204759cacca4a0e9c92d803ab45aa0f04048a8275dba15f7d",
+ "reserve_lightcurves_manifest_sha256": "1cc05dba8cb0fa014e875b91bac9ada419d3e143a15412653e1b51e6c5bd2f96",
+ "samples": {
+  "A": {
+   "stars": 1000,
+   "populations": {
+    "null": 350,
+    "inj": 400,
+    "real": 100,
+    "eb": 150
+   },
+   "cells": {
+    "null_tce_only": 175,
+    "inj_tce_only": 200,
+    "null_random": 175,
+    "inj_random": 200,
+    "real_12_up": 50,
+    "eb": 150,
+    "real_7_12": 50
+   },
+   "truth_sha256": "605de2b8dbf76494b30e30748a73d026e796de2497353f566ebd81b93ea2c2a2",
+   "star_files_sha256": "7ec1464b021c4431df44f7b2e00a066ecac418395cf9afac077944c984fde269"
+  },
+  "B": {
+   "stars": 1000,
+   "populations": {
+    "eb": 150,
+    "inj": 400,
+    "real": 100,
+    "null": 350
+   },
+   "cells": {
+    "eb": 150,
+    "inj_random": 200,
+    "real_7_12": 50,
+    "inj_tce_only": 200,
+    "null_random": 175,
+    "null_tce_only": 175,
+    "real_12_up": 50
+   },
+   "truth_sha256": "abf96b05d2de84e6169d41b13535dcbd4509a772ff162b442dd2024b0337c944",
+   "star_files_sha256": "a6561c415cb28ee108a2b4ce762f2d02b4243c2469d6364c057b31bf72698416"
+  }
+ },
+ "star_files_sha256_rule": "SHA-256 of the lines '<star_id> <file sha256>\\n', sorted by star id"
+}

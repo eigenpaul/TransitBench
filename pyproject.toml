@@ -1,0 +1,47 @@
+[project]
+name = "transitbench"
+version = "1.0.0"
+description = "Coding agents build a transit-search pipeline that is frozen and run once on unseen Kepler stars."
+tags = ["astronomy", "science", "coding", "agent", "sandbox", "benchmark", "rl", "v1"]
+requires-python = ">=3.12"
+license = "MIT"
+# verifiers runs the tasksets transitbench-survey and transitbench-mini. A floor, not a pin: prime-rl installs this
+# package with --no-deps and keeps its own verifiers. The git rev under [tool.uv.sources] is for local vf-* runs.
+dependencies = [
+    "numpy>=2.3",
+    "verifiers>=0.4.1.dev84",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1",
+]
+build = [
+    "astropy>=7.1",
+    "scikit-learn>=1.7",
+]
+prime = [
+    "prime-sandboxes>=0.5.1",
+]
+
+[tool.uv.sources]
+verifiers = { git = "https://github.com/PrimeIntellect-ai/verifiers", rev = "e7c847821a6b726ac715640c126a8c08801e342e" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["transitbench", "transitbench_env", "transitbench_survey", "transitbench_mini"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"workspace/solution/solution.py" = "transitbench_env/data/starter/solution.py"
+"dev/truth.json" = "transitbench_env/data/dev_truth.json"
+"dev/files.json" = "transitbench_env/data/dev_files.json"
+"manifests/release_r1.json" = "transitbench_env/data/release_r1.json"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "jail: needs root on Linux with bubblewrap",
+]

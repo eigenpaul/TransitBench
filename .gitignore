@@ -1,0 +1,21 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.prime/
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+outputs/
+dist/
+*.egg-info/
+/data/
+image/context/
+
+# dot-prefixed lock files that serialise concurrent writers, such as hidden.py's bundle locks
+.*.lock

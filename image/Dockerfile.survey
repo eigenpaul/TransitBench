@@ -1,0 +1,15 @@
+# TransitBench survey image: the base image plus the 196-star public dev set at /app/data
+# (docs/IMAGE.md). Prime builds each pushed Dockerfile on its own, with no build arguments, so this
+# file repeats the base steps (the same pinned base and install.sh) instead of FROM the base ref.
+#   uv run python -I scripts/image_context.py      # fills image/context/dev, sha-checked
+#   docker build -t transitbench-survey:local -f image/Dockerfile.survey image
+#   prime images push transitbench-survey:m3 --context image --dockerfile image/Dockerfile.survey --private
+FROM python:3.12-slim-bookworm@sha256:2090ee9f64d462a36c0c76309a869bae63f3c722470f96030bd14a825c88d0b2
+
+COPY install.sh requirements.txt /tmp/tb-image/
+RUN sh /tmp/tb-image/install.sh transitbench-survey:m3 && rm -rf /tmp/tb-image
+
+# truth.json and stars/dev-000.npz .. dev-195.npz, root-owned, 0644 files in 0755 directories.
+COPY context/dev/ /app/data/
+
+WORKDIR /app
