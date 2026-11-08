@@ -15,6 +15,7 @@ authors:
     family-names: Hildebrandt
     orcid: "https://orcid.org/0009-0006-0188-4110"
 version: v1
+doi: 10.5281/zenodo.24060992
 date-released: 2026-10-30
 license: MIT
 repository-code: "https://github.com/eigenpaul/TransitBench"

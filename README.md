@@ -91,3 +91,8 @@ it. [scripts/build.py](scripts/build.py) builds the dev set and the test samples
 [scripts/mini_pool.py](scripts/mini_pool.py) the mini pool, from the Kepler light curves and tables that
 [scripts/fetch_lightcurves.py](scripts/fetch_lightcurves.py) and [scripts/fetch_tables.py](scripts/fetch_tables.py)
 download.
+
+## Citation
+
+The v1 release is archived on Zenodo as [doi:10.5281/zenodo.24060992](https://doi.org/10.5281/zenodo.24060992).
+[CITATION.cff](CITATION.cff) has the citation metadata, and GitHub's "Cite this repository" gives it as BibTeX.
