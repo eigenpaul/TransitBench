@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use TransitBench, please cite it as below."
+type: software
+title: "TransitBench: Can AI agents automate the search for exoplanets?"
+abstract: >-
+  TransitBench is a benchmark for autonomous scientific programming in
+  astronomy. A coding agent gets one year of real Kepler light curves for 196
+  labelled dev stars and a weak starter search, and builds a planet-search
+  pipeline in Python. When the session ends, the pipeline is frozen and runs
+  once, with no language model, on 2,000 hidden stars, where it is scored on
+  injected planets found minus false candidates on eclipsing binaries and
+  Kepler false alarms.
+authors:
+  - given-names: Paul
+    family-names: Hildebrandt
+    orcid: "https://orcid.org/0009-0006-0188-4110"
+version: v1
+date-released: 2026-10-30
+license: MIT
+repository-code: "https://github.com/eigenpaul/TransitBench"
+url: "https://transitbench.eigenpaul.com"
+keywords:
+  - exoplanets
+  - transit search
+  - Kepler
+  - benchmark
+  - AI agents
+  - autonomous scientific programming
+  - reinforcement learning environments
